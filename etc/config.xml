@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <drop_disable_unuseful_log>
+            <configuration>
+                <log_not_in><![CDATA[/No\ssuch\sentity\swith\scustomerId\s=\s$/]]></log_not_in>
+                <log_backtrace><![CDATA[/Environment\semulation\snesting\sis\snot\sallowed+/]]></log_backtrace>
+            </configuration>
+        </drop_disable_unuseful_log>
+    </default>
+</config>

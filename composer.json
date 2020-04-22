@@ -1,0 +1,21 @@
+{
+  "name": "drop/module-disable-unuseful-log",
+  "description": "Drop Disable Unuseful Log",
+  "license": "proprietary",
+  "authors": [
+    {
+      "email": "developers@drop.it",
+      "name": "Mario Carotti"
+    }
+  ],
+  "minimum-stability": "dev",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Drop\\DisableUnusefulLog\\": ""
+    }
+  }
+}

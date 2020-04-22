@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="drop" translate="label" sortOrder="10">
+            <label>Drop</label>
+        </tab>
+        <section id="drop_disable_unuseful_log" translate="label" type="text" sortOrder="410" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Disable Unuseful log</label>
+            <tab>drop</tab>
+            <resource>Drop_DisableUnusefulLog::configuration</resource>
+            <group id="configuration" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <comment>Base configurations</comment>
+                <label>Configurations</label>
+                <field id="log_not_in" translate="label" type="textarea" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Disable log for</label>
+                    <comment><![CDATA[Una riga per ogni regexp comprensive di delimitatori (es: /[0-9]+/), espressioni non valide verrano saltate]]></comment>
+                </field>
+                <field id="log_backtrace" translate="label" type="textarea" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Enable log backtrace for</label>
+                    <comment><![CDATA[Una riga per ogni regexp comprensive di delimitatori (es: /[0-9]+/), espressioni non valide verrano saltate (log stack save in var/log/drop_disable_unuseful.log)]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
